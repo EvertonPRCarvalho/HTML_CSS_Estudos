@@ -1,0 +1,101 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;                             /*A imagem ocupara 100% da tela disponivel*/
+}
+
+.header {
+    background-color: black;
+    display: flex;                               /*Elementos posicionados um ao lado do outro*/
+    flex-wrap: wrap;
+    justify-content: space-between;     
+    align-items: center;         
+    padding: 20px;
+}
+.header a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+/* Pincipais Noticias*/
+
+.principais {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 auto;    
+    max-width: 1024px;                            /*O container tera 800px de largura no maximo*/
+    justify-content: space-between;
+    
+
+}
+
+.principais div {
+    margin: 10px;
+    flex: 1 1 200px;  
+}
+.principais a {
+    text-decoration: none;
+    color: black;
+}
+
+.principais h2{
+    font-size: 1em;
+}
+
+.principais h4 {
+    font-size: 0.67em;
+}
+
+/* Grid */
+
+.grind1 {
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1004px;
+    margin: 0 auto;                              /*Matem os itens centralizados*/
+    grid-gap:20px ;
+}
+.grind1 > div:nth-child(n + 4) {                 /*Ou seja, a paritr do 4 item, inclusive o proprio item 4, irei fazer... segue abaixa as auteracoes*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 18px;
+}
+
+/* FlexBox */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;                            /*O container tera 800px de largura no maximo*/
+    margin: 0 auto;                       
+}
+
+.flex > div {
+    flex: 1 1 200px;                             /*A div pode expandir (1=true), diminue (1=true) e tera uma base de 200px, do contrario havera uma quebra de linha */
+    margin: 10px;
+}
+
