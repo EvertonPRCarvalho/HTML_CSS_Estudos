@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Patua One';
+    font-style: normal;
+    background-color: rgba(11, 11, 11, 0.88);
+}
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header ." "main aside" "footer footer";
+}
+
+header {
+    background-color: yellow;
+    grid-area: header;
+}
+
+main {
+    background-color: blue;
+    grid-area: main;
+}
+
+aside {
+    background-color: green;
+    grid-area: aside;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+    
+}

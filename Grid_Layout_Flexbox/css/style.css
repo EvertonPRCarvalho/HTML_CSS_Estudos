@@ -21,7 +21,8 @@ img {
     background-color: black;
     display: flex;                               /*Elementos posicionados um ao lado do outro*/
     flex-wrap: wrap;    
-    justify-content: space-between;    padding: 20px;
+    justify-content: space-between;    
+    padding: 20px;
 }
 .header a {
     text-decoration: none;
