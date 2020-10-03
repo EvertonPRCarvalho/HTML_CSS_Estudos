@@ -9,13 +9,19 @@ body {
     margin-right: 20px;
     padding: 0;
 
-    background: rgba(11, 11, 11, 0.88);
+    background: rgb(11, 11, 11);
 
 }
-
+h2 {
+    color: white;
+}
 a {
     text-decoration: none;
     color: white
+}
+p {
+    line-height: 1.5;
+    color: white;
 }
 b {
     color: white;
@@ -30,18 +36,23 @@ li {
     margin: 0 auto;
     padding: 20px;
 }
+.recuo {
+    text-indent: 40px;
+}
 
-/* -- CABECALHO -- */
+/* -- Cabecalho -- */
 header {
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-areas: "logo navbar redes_sociais";
 
+    max-width: 1360px;
+
     position: relative;
 }
 
 .logo {
-    margin: 40px 20px;
+    margin: 40px 0px;
     position: absolute;
 
     grid-area: logo;
@@ -57,7 +68,7 @@ header {
 .redes_sociais {
     position: absolute;
     margin-top: 40px;
-    margin-left: 150px;
+    margin-right: 20px;
     grid-area: redes_sociais;
 }
 
@@ -70,29 +81,29 @@ header {
 .home {
     position: relative;
 
-    height: 706px;
-    width: 915;
+    max-height: 706px;
+    max-width: 915;
     
     grid-area: navbar;
     
 }
-
-#img1 {
+/* Home Imagem 1*/
+#img1 { 
     position: absolute;
-    margin-left: -145px;
+    margin-left: -125px;
 }
-
+/* Home Imagem 2*/
 #img2 {
     margin-top: 332px;
     margin-left: 206px;
 }
-
+/* Home Texto */
 .texto_home {
     position: absolute;
     width: 432px;
     height: 93px;
-    left: 569px;
-    top: 106px;
+    left: 530px;
+    top: 80px;
 
     
     font-size: 2.5rem;
@@ -102,19 +113,301 @@ header {
     color: #FF8200;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
-
+/* Home Retangulo atras do texto */
 .texto_home > #retangulo {
  
     width: 110px;
     height: 36px;
     
-    margin-top: -80px;
+    margin-top: -85px;
     margin-left: 127px;
     background: #FF8200;
 }
+/* Home Hora Local*/
+.local_hora_home {
+    display: flex;
+    flex-wrap: wrap;
 
+    position: relative;
 
+    margin-top:-465px;
+    margin-left: 420px;
+    padding: 0;
 
+    font-size: 12px; 
+    color: white;
+    
+    max-width: 180px;
+    max-height: 150px;
+
+}
+
+.local_hora_home > #local {
+    display: flex;
+    max-width: 100px;
+}
+
+.local_hora_home > #hora {
+    display: flex;
+    max-width: 200px;
+
+}
+
+.local img {
+    width: 20px;
+    height: 30px;
+
+    margin-left: 8px;
+    
+}
+.local p {
+   margin-left: 10px;
+   margin-top: 0;
+    
+}
+
+.hora img {
+    width: 45px;
+    height: 30px;
+}
+.hora p {
+
+    margin-top: 0;
+    margin-left: 6px;
+}
+/* Servindo bem desde 2020 */
+.txt_servindo {
+
+    position: absolute;
+
+    width: 180px;
+
+    left: 10.74%;
+    right: 9.55%;
+    top: 500px;
+    bottom: 14.4%;
+
+    
+    font-size: 21px;
+    line-height: 32px;
+
+    color: #FF8200;
+
+}
+/* Linha 1 */
+.txt_servindo > #linha1 {
+    position: absolute;
+    width: 175px;
+    border: 3px solid #FF8200;
+}
+
+.txt_servindo > h3 {
+
+}
+
+/* Linha 2 */
+.txt_servindo > #linha2 {
+
+    position: absolute;
+    width: 175px;
+    border: 3px solid #FF8200;
+}
+
+/* Texto Menu */
+.txt_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagens texto";
+    position: absolute;
+    width: 1073px;
+    height: 1414px;
+    left: 102px;
+    top: 769px;
+}
+.txt_menu  h2 {
+    grid-area: texto;
+}
+
+/* Imagens Texto Menu */
+
+.txt_menu img {
+    grid-area: imagens;
+  
+}
+#txt_menu_img1{
+    margin-top: -30px;
+    margin-left: 100px;
+}
+#txt_menu_img2{
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+#txt_menu_img3{
+    margin-left: 170px;
+}
+
+/* texto-menu */
+#texto_longo{
+    grid-area: texto;
+    margin-top: 60px;
+}
+.txt_menu b {
+    color: #FF8200;
+}
+
+#txt_menu_2 {
+    padding-top: 100px;
+}
+#txt_menu_3 {
+    padding-top: 180px;
+
+}
+
+#texto_longo {
+    grid-area: texto;
+}
+
+/* Menu */
+
+.menu { /* Tive que fazer um ajuste com o MARGIN porque as imagens eram exibidas no inicio da pagina*/
+    display: grid;
+    position: absolute;
+    margin-top: 900px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "opcoes imagens_menu";
+}
+
+.opcoes {
+    width: 100px;
+    text-align: end;
+    justify-self: end;
+
+    font-size: 21px;
+
+    margin-right: 30px;
+}
+
+.img_menu{
+    grid-area: imagens_menu;    
+}
+.img_menu img {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* Sobre */
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagem_sobre texto_sobre";
+    position: absolute;
+    width: 1087px;
+    height: 659px;
+    left: 121px;
+    top: 2273px;
+}
+
+#sobre_img1 {
+    grid-area: imagem_sobre;
+}
+#sobre_img2 {
+    grid-area: texto_sobre;
+    justify-content: start;
+} 
+
+.sobre h2 {
+    grid-area: texto_sobre;
+    color: white;
+    justify-self: start;
+    margin-top:125px;
+    margin-left: 30px;
+}
+
+#texto_sobre {
+    width: 589px;
+    height: 263px;
+    top: 2604px;
+
+    margin-top: 165px;
+
+    grid-area: texto_sobre;
+
+}
+
+#texto_sobre b {
+    color: #FF8200;
+}
+/* Cervejaria */
+
+.cervejaria {
+    position: absolute;
+    width: 1082px;
+    height: 607px;
+    left: 121px;
+    top: 2900px;
+    display: grid;
+}
+
+#cerv_img2 {
+    margin-top: -375px;
+    margin-left: 550px;
+}
+#cerv_img3 {
+    margin-top: -75px;
+    margin-left: 257px;
+}
+
+#cerv_img4 {
+    margin-left: -50px;
+    margin-bottom: -610px;    
+}
+
+/* Contato */
+.contato {
+    position: absolute;
+    width: 1056px;
+    height: 589px;
+    left: 151px;
+    top: 3677px;
+}
+.local_hora_contato {
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    margin-top:-465px;
+    margin-left: 0px;
+    padding: 0;
+
+    font-size: 12px; 
+    color: white;
+    
+    max-width: 180px;
+    max-height: 150px;
+}
+#mapa {
+    width: 752px;
+    height: 482px;
+    
+    margin-left: 260px;
+
+    background: #C4C4C4;
+}
+
+/* Rodapé */
+.rodape {
+    margin-top: 3550px;
+    height: 200px;
+    color: white;
+}
+
+.rodape > img {
+    margin-left: 620px;
+}
 
 /*
 Laranja escuro D47B1E
