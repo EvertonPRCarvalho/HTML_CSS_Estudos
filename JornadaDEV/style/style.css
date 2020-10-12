@@ -39,6 +39,9 @@ li {
 .recuo {
     text-indent: 40px;
 }
+.titulo {
+    color: #D47B1E;
+}
 
 /* -- Cabecalho -- */
 header {
@@ -210,6 +213,11 @@ header {
 }
 
 /* Texto Menu */
+.txt_menu .titulo {
+    position: absolute;
+    margin-top: -90px;
+    
+}
 .txt_menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -218,7 +226,7 @@ header {
     width: 1073px;
     height: 1414px;
     left: 102px;
-    top: 769px;
+    top: 850px;
 }
 .txt_menu  h2 {
     grid-area: texto;
@@ -267,7 +275,95 @@ header {
 /* Menu */
 
 
+.menu-t {
+    display: grid;
+    margin-top: 900px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "text imagens";
+}
+
+.options {
+    width: 100px;
+    text-align: end;
+    justify-self: end;
+
+    font-size: 21px;
+
+    margin: 20px;    
+}
+
+
+.figure-box {
+    grid-area: imagens;
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.figure-box figure {
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.figure-box figure img{
+    max-width: 100%;
+    position: relative;
+    transition: transform 0.6s;
+
+}
+
+.figure-box figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 37px;
+    padding-right: 37px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    opacity: 0;
+    transition: transform 0.6s, opacity 0.1s 0.1s;
+  
+}
+
+.figure-box figcaption li {
+    display: list-item;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+
+}
+
+.figure-box figcaption h3 {
+    color: #FF8200;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.figure-box figure:hover figcaption{
+    opacity: 1;
+    transform:translateY(0px);
+    transition: transform 0.6s, opacity 0.1s 0.3s;
+
+}
+
 /* Sobre */
+
+.sobre .titulo {
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -20px;
+}
 
 .sobre {
     display: grid;
@@ -277,7 +373,7 @@ header {
     width: 1087px;
     height: 659px;
     left: 121px;
-    top: 2273px;
+    top: 2323px;
 }
 
 #sobre_img1 {
@@ -311,13 +407,16 @@ header {
     color: #FF8200;
 }
 /* Cervejaria */
-
+.cervejaria .titulo {
+    margin-top: -90px;
+    margin-left: -20px;
+}
 .cervejaria {
     position: absolute;
     width: 1082px;
     height: 607px;
     left: 121px;
-    top: 2900px;
+    top: 2950px;
     display: grid;
 }
 
@@ -369,8 +468,13 @@ header {
 }
 
 /* Rodapé */
+.rodape .titulo {
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -40px;
+}
 .rodape {
-    margin-top: 3550px;
+    margin-top: 350px;
     height: 200px;
     color: white;
 }
@@ -383,84 +487,3 @@ header {
 Laranja escuro D47B1E
 Laranja claro  FF8200
 */
-
-.menu-t {
-    display: grid;
-    margin-top: 850px;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "text imagens";
-}
-
-.options {
-    width: 100px;
-    text-align: end;
-    justify-self: end;
-
-    font-size: 21px;
-
-    margin: 20px;    
-}
-
-
-.figure-box {
-    grid-area: imagens;
-    position: relative;
-    max-width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-}
-
-.figure-box figure {
-    overflow: hidden;
-    position: relative;
-    margin: 10px;
-    padding: 10px;
-}
-
-
-.figure-box figure img{
-    max-width: 100%;
-    position: relative;
-    transition: transform 0.6s;
-
-}
-
-.figure-box figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    max-width: 100%;
-    max-height: 100%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    opacity: 0;
-    transition: transform 0.6s, opacity 0.1s 0.1s;
-  
-}
-
-.figure-box figcaption li {
-    display: list-item;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    font-size: 1.25rem;
-
-}
-
-.figure-box figcaption h3 {
-    color: #FF8200;
-    text-align: center;
-}
-
-.figure-box figure:hover figcaption{
-    opacity: 1;
-    transform:translateY(0px);
-    transition: transform 0.6s, opacity 0.1s 0.3s;
-
-}
