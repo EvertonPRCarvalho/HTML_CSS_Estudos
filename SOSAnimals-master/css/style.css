@@ -1,0 +1,261 @@
+body{
+    margin: 0;     
+}
+
+
+ /* toda a barra */
+header{
+    max-width: 100%;
+    justify-content:space-between;
+    background-color: #585555;
+    display: flex;
+    height: 70px; 
+
+}
+
+#logo{
+    width: 150px;
+    height: 60px;
+    margin-left: 65%;
+   }
+
+#navbar{
+    padding: 25px;
+
+}
+
+
+/* icones */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.item{
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-right: 30px;
+    color: white;
+
+}
+/* denuncie */
+
+#red{
+    background-color: red;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+/* =============================================================== */
+/* sobre */
+
+#sobre{
+    max-width: 100%;
+    padding-top: 70px;
+    display: flex;
+    justify-content:space-around;
+    background-color: #767056;
+    margin: 0px;
+}
+
+#esquerda{
+
+    padding: 27px;
+}
+#esquerda p{
+    padding-top: -5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#esquerda a{
+    text-decoration:none;
+    background-color: #5BF66B;
+    border: 13px solid  #5BF66B;
+    border-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    
+
+}
+
+#direita{
+    margin-top: -2.5%;
+}
+
+#logo2{
+    padding-top: 10%;
+}
+
+/* Amiguinhos==================================================================== */
+
+h1 {
+    text-align: center;
+    padding-top: 55px;
+}
+#amiguinhos{
+    border: 0px;
+    margin-top: 0px;
+}
+.animals{
+    max-width: 100%;
+    margin-top: 0px;
+    background-color: #FFBD58;
+    
+}
+
+.row {
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.row2 {
+   
+    display: flex;
+    justify-content:space-around;
+}
+
+.row img {
+    margin: 20px;
+}
+
+.animals #amiguinhos {
+    color: white;
+}
+
+.animals #underline-animals {
+    width: 86px;
+    height: 2px;
+    margin-top: -5px;
+    background-color: white;
+    border-color: white;
+    
+}
+
+.vermais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Ongs======================================================== */
+
+#ongs{
+    margin-top: 0px;
+}
+.ongs {
+    max-width: 100%;
+    height: 800px;
+    background-color: #ffe4b5;
+
+
+}
+
+.ongs #underline-ongs {
+    width: 86px;
+    height: 2px;
+    margin-top: -5px;
+    background-color: black;
+    border-color: black;
+}
+
+.ongs p {
+    text-align: center;
+    height: 98px;
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 1px;
+    padding-top: 41px;
+
+}
+
+.vermais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#more {
+    margin: 60px;
+    
+    
+}
+
+/* Parceiros================================================== */
+.parceiros {
+    max-width: 100%;
+    background-color: #FFBD58;
+    max-width: 100%;
+    height: 434px;
+}
+
+.parceiros h1 {
+    margin-top: 0px;
+    color: white;
+}
+
+.parceiros #underline-parceiros {
+    width: 86px;
+    height: 2px;
+    margin-top: -5px;
+    background-color: white;
+    border-color: white;
+}
+
+/* Footer=================================== */
+.footer {
+    background-color: #767056;
+    color:white;
+    max-width: 100%;
+    height: 170px;
+    padding-bottom: 43px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer #logo-rodape {
+    width: 160px;
+    height: 137px;
+    padding-top: 40px;
+}
+
+.contato {
+    padding: 20px;
+}
+
+.redes-sociais {
+    padding: 20px;
+}
+
+.redes-sociais #facebook {
+    width: 700;
+    height: 63px;
+}
+
+.denuncia {
+    padding: 20px;
+}
+
+.denuncia #site-denuncia {
+    background-color: rgba(255, 0, 0, 0.945);
+    width: 10px;
+    height: 100%;
+    text-decoration:none;
+    color: white;
+    padding: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+}
+
+.footer p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
